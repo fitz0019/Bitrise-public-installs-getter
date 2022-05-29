@@ -17,14 +17,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],\
     "dependencyTreeRoots": [\
       {\
-        "name": "heroku-build-getter",\
+        "name": "bitrise-public-installs-getter",\
         "reference": "workspace:."\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["heroku-build-getter", ["workspace:."]]\
+      ["bitrise-public-installs-getter", ["workspace:."]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -58,6 +58,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["form-data", "npm:4.0.0"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["bitrise-public-installs-getter", [\
+        ["workspace:.", {\
+          "packageLocation": "./",\
+          "packageDependencies": [\
+            ["bitrise-public-installs-getter", "workspace:."],\
+            ["axios", "npm:0.27.2"],\
+            ["dotenv", "npm:16.0.1"],\
+            ["moment", "npm:2.29.3"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["combined-stream", [\
@@ -120,18 +132,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mime-types", "npm:2.1.35"]\
           ],\
           "linkType": "HARD"\
-        }]\
-      ]],\
-      ["heroku-build-getter", [\
-        ["workspace:.", {\
-          "packageLocation": "./",\
-          "packageDependencies": [\
-            ["heroku-build-getter", "workspace:."],\
-            ["axios", "npm:0.27.2"],\
-            ["dotenv", "npm:16.0.1"],\
-            ["moment", "npm:2.29.3"]\
-          ],\
-          "linkType": "SOFT"\
         }]\
       ]],\
       ["mime-db", [\

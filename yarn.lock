@@ -22,6 +22,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bitrise-public-installs-getter@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "bitrise-public-installs-getter@workspace:."
+  dependencies:
+    axios: ^0.27.2
+    dotenv: ^16.0.1
+    moment: ^2.29.3
+  languageName: unknown
+  linkType: soft
+
 "combined-stream@npm:^1.0.8":
   version: 1.0.8
   resolution: "combined-stream@npm:1.0.8"
@@ -65,16 +75,6 @@ __metadata:
   checksum: 01135bf8675f9d5c61ff18e2e2932f719ca4de964e3be90ef4c36aacfc7b9cb2fceb5eca0b7e0190e3383fe51c5b37f4cb80b62ca06a99aaabfcfd6ac7c9328c
   languageName: node
   linkType: hard
-
-"heroku-build-getter@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "heroku-build-getter@workspace:."
-  dependencies:
-    axios: ^0.27.2
-    dotenv: ^16.0.1
-    moment: ^2.29.3
-  languageName: unknown
-  linkType: soft
 
 "mime-db@npm:1.52.0":
   version: 1.52.0
