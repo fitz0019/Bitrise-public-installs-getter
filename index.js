@@ -65,8 +65,17 @@ async function init() {
     // fs.writeFileSync(`./data/${date}/${name}_latest_build.json`, JSON.stringify(latestBuild, null, 2))
   }
   console.log(`Writing out public install pages and artifact information`)
+  let artifactDates = {}
+  artifacts.forEach(({ build_finished_at, app_name }) => {
+    const day = moment(build_finished_at, 'DD/MM/YYYY HH:mm:ss').format('YYYY/MM/DD')
+    if (artifactDates[day] === undefined) artifactDates[day] = []
+    artifactDates[day] = [...artifactDates[day], app_name]
+  })
+  if(Object.keys(artifactDates).length > 1){
+    publicInstallPages.warning = `There is a mismatch of dates apps were built, please check ${date}_app_information.json for more information`
+  }
   fs.writeFileSync(`./data/${date}_public_install_pages.json`, JSON.stringify(publicInstallPages, null, 2))
-  fs.writeFileSync(`./data/${date}_app_information.json`, JSON.stringify(artifacts, null, 2))
+  fs.writeFileSync(`./data/${date}_app_information.json`, JSON.stringify({ artifacts, artifactDates }, null, 2))
 }
 
 
