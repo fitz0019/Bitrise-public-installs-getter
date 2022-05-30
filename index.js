@@ -13,7 +13,6 @@ const fs = require('fs')
 const workflowFilter = process.env.WORKFLOW
 const statusFilter = typeof process.env.STATUS === 'number' ? statusMapper[process.env.STATUS] : process.env.STATUS
 
-
 const bitriseBase = 'https://api.bitrise.io/v0.1'
 
 const getBuildsUrl = ({ app_slug }) => `${bitriseBase}/apps/${app_slug}/builds`
@@ -75,6 +74,5 @@ async function init() {
   fs.writeFileSync(`./data/${date}_public_install_pages.json`, JSON.stringify(publicInstallPages, null, 2))
   fs.writeFileSync(`./data/${date}_app_information.json`, JSON.stringify({ artifacts, artifactDates }, null, 2))
 }
-
 
 init()
