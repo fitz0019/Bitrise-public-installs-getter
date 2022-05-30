@@ -58,11 +58,6 @@ async function init() {
       public_install_page_url,
       build_finished_at: moment(build_finished_at).format('DD/MM/YYYY HH:mm:ss')
     })
-    // console.log(artifactInfo[name])
-    // FOR DEBUGGING
-    // fs.writeFileSync(`./data/${date}/${name}_artifacts.json`, JSON.stringify(artifactData, null, 2))
-    // fs.writeFileSync(`./data/${date}/${name}_artifact_public.json`, JSON.stringify(publicInstallArtifact, null, 2))
-    // fs.writeFileSync(`./data/${date}/${name}_latest_build.json`, JSON.stringify(latestBuild, null, 2))
   }
   console.log(`[INFO] Writing out public install pages and artifact information`)
   let artifactDates = {}
