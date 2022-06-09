@@ -1,0 +1,202 @@
+{
+  "uat": [
+    {
+      "name": "WEB-RADR - YELLOWCARD - iOS",
+      "public_install_page_url": "https://www.bitrise.io/artifact/129983483/p/cbacc9b80a4b3e03bf85ba71706d8b03",
+      "build_number": 4480,
+      "version": "24.0.1",
+      "build_finished_at": "2022-06-06T00:18:16Z"
+    },
+    {
+      "name": "WEB-RADR - YELLOWCARD - Android",
+      "public_install_page_url": "https://www.bitrise.io/artifact/129981077/p/4c8093533a21f908f41c19f9ec279209",
+      "build_number": 5251,
+      "version": "24.0.1",
+      "build_finished_at": "2022-06-05T23:15:43Z"
+    },
+    {
+      "name": "WEB-RADR - UAE - iOS",
+      "public_install_page_url": "https://www.bitrise.io/artifact/129981547/p/245d1e447cac90aefffa2dcb89f47617",
+      "build_number": 4122,
+      "version": "24.0.1",
+      "build_finished_at": "2022-06-05T23:32:06Z"
+    },
+    {
+      "name": "WEB-RADR - UAE - Android",
+      "public_install_page_url": "https://www.bitrise.io/artifact/129981098/p/d86517865b34960bc76550378a65919a",
+      "build_number": 4120,
+      "version": "24.0.1",
+      "build_finished_at": "2022-06-05T23:16:39Z"
+    },
+    {
+      "name": "WEB-RADR - HALMED - iOS",
+      "public_install_page_url": "https://www.bitrise.io/artifact/129982160/p/fdfec782cdf0dd39ffc57a109beeebf9",
+      "build_number": 4724,
+      "version": "24.0.1",
+      "build_finished_at": "2022-06-05T23:57:21Z"
+    },
+    {
+      "name": "WEB-RADR - HALMED - Android",
+      "public_install_page_url": "https://www.bitrise.io/artifact/130026310/p/6f1e86593d97aad87d640baa44279010",
+      "build_number": 3903,
+      "version": "24.0.1",
+      "build_finished_at": "2022-06-06T08:59:05Z"
+    },
+    {
+      "name": "WEB-RADR - PAHO - Android",
+      "public_install_page_url": "https://www.bitrise.io/artifact/129449689/p/27bdebc80550d8d9337cea2d526f98ae",
+      "build_number": 254,
+      "version": "24.0.1",
+      "build_finished_at": "2022-06-01T18:57:14Z"
+    },
+    {
+      "name": "WEB-RADR - PAHO - iOS",
+      "public_install_page_url": "https://www.bitrise.io/artifact/129432118/p/33fd89e06a5d04df8a535a1676081834",
+      "build_number": 254,
+      "version": "24.0.1",
+      "build_finished_at": "2022-06-01T17:29:16Z"
+    },
+    {
+      "name": "WEB-RADR - MSVM - Android",
+      "public_install_page_url": "https://www.bitrise.io/artifact/129451230/p/4b98660b9bbee4f25429a9e926a847e6",
+      "build_number": 244,
+      "version": "24.0.1",
+      "build_finished_at": "2022-06-01T19:12:29Z"
+    },
+    {
+      "name": "WEB-RADR - MSVM - iOS",
+      "public_install_page_url": "https://www.bitrise.io/artifact/129437159/p/b68d706b4db8be5433b90c84f6cc453d",
+      "build_number": 266,
+      "version": "24.0.1",
+      "build_finished_at": "2022-06-01T17:55:28Z"
+    },
+    {
+      "name": "WEB-RADR - IMI - Android",
+      "public_install_page_url": "https://www.bitrise.io/artifact/129429915/p/caf1b8b8a76058611c21d5e0df28234b",
+      "build_number": 145,
+      "version": "24.0.1",
+      "build_finished_at": "2022-06-01T17:16:45Z"
+    },
+    {
+      "name": "WEB-RADR - IMI - iOS",
+      "public_install_page_url": "https://www.bitrise.io/artifact/129446103/p/5ee5d1028e5e331e05648c7688d332b5",
+      "build_number": 154,
+      "version": "24.0.1",
+      "build_finished_at": "2022-06-01T18:41:02Z"
+    },
+    {
+      "name": "WEB-RADR - WEB-RADR - Android",
+      "public_install_page_url": "https://www.bitrise.io/artifact/129981887/p/c9e3eeb95bf7d81e8ace5c61766c5c14",
+      "build_number": 4832,
+      "version": "24.0.1",
+      "build_finished_at": "2022-06-05T23:47:57Z"
+    },
+    {
+      "name": "WEB-RADR - WEB-RADR - iOS",
+      "public_install_page_url": "https://www.bitrise.io/artifact/129981901/p/fefcb190e6284c5456104f6b45f534b4",
+      "build_number": 5030,
+      "version": "24.0.1",
+      "build_finished_at": "2022-06-05T23:49:05Z"
+    }
+  ],
+  "qa": [
+    {
+      "name": "WEB-RADR - YELLOWCARD - iOS",
+      "public_install_page_url": "https://www.bitrise.io/artifact/129992171/p/c9f25275bbcbda37a0b0443397b438a7",
+      "build_number": 4482,
+      "version": "24.0.4",
+      "build_finished_at": "2022-06-06T02:23:53Z"
+    },
+    {
+      "name": "WEB-RADR - YELLOWCARD - Android",
+      "public_install_page_url": "https://www.bitrise.io/artifact/129990989/p/34a078b0ff519e2d94c484fac151026c",
+      "build_number": 5253,
+      "version": "24.0.4",
+      "build_finished_at": "2022-06-06T02:06:56Z"
+    },
+    {
+      "name": "WEB-RADR - UAE - iOS",
+      "public_install_page_url": "https://www.bitrise.io/artifact/129993143/p/563c3b09df532b22e3cda8e980e34218",
+      "build_number": 4124,
+      "version": "24.0.4",
+      "build_finished_at": "2022-06-06T02:39:43Z"
+    },
+    {
+      "name": "WEB-RADR - UAE - Android",
+      "public_install_page_url": "https://www.bitrise.io/artifact/129988102/p/d65a646982588378851b1eb434819983",
+      "build_number": 4121,
+      "version": "24.0.4",
+      "build_finished_at": "2022-06-06T01:17:48Z"
+    },
+    {
+      "name": "WEB-RADR - HALMED - iOS",
+      "public_install_page_url": "https://www.bitrise.io/artifact/129990227/p/d34362cce7095ae1197632e91e1c93ed",
+      "build_number": 4726,
+      "version": "24.0.4",
+      "build_finished_at": "2022-06-06T01:50:56Z"
+    },
+    {
+      "name": "WEB-RADR - HALMED - Android",
+      "public_install_page_url": "https://www.bitrise.io/artifact/110781562/p/1093cf17d647b5c0a453eaa5aa9cf678",
+      "build_number": 3902,
+      "version": "24.0.1",
+      "build_finished_at": "2022-01-31T01:18:37Z"
+    },
+    {
+      "name": "WEB-RADR - PAHO - Android",
+      "public_install_page_url": "https://www.bitrise.io/artifact/128546576/p/868fdfb4b18cf918c1d9a4292abeb698",
+      "build_number": 251,
+      "version": "24.0.4",
+      "build_finished_at": "2022-05-26T12:25:30Z"
+    },
+    {
+      "name": "WEB-RADR - PAHO - iOS",
+      "public_install_page_url": "https://www.bitrise.io/artifact/127933920/p/2cadf7f577b6825f9659f1e18a866bd5",
+      "build_number": 246,
+      "version": "24.0.2",
+      "build_finished_at": "2022-05-23T16:33:36Z"
+    },
+    {
+      "name": "WEB-RADR - MSVM - Android",
+      "public_install_page_url": "https://www.bitrise.io/artifact/128547165/p/8c67730cd7cf3d8059910f4b52eb9e04",
+      "build_number": 241,
+      "version": "24.0.4",
+      "build_finished_at": "2022-05-26T12:29:53Z"
+    },
+    {
+      "name": "WEB-RADR - MSVM - iOS",
+      "public_install_page_url": "https://www.bitrise.io/artifact/127952464/p/d4cbf102761c67e4cb3a240aade328ac",
+      "build_number": 258,
+      "version": "24.0.2",
+      "build_finished_at": "2022-05-23T18:12:59Z"
+    },
+    {
+      "name": "WEB-RADR - IMI - Android",
+      "public_install_page_url": "https://www.bitrise.io/artifact/128545493/p/91929f2c10fdba76901a209e39bcccb9",
+      "build_number": 142,
+      "version": "24.0.4",
+      "build_finished_at": "2022-05-26T12:13:51Z"
+    },
+    {
+      "name": "WEB-RADR - IMI - iOS",
+      "public_install_page_url": "https://www.bitrise.io/artifact/127947397/p/993879c42db5d7801b226db9f6478a71",
+      "build_number": 145,
+      "version": "24.0.2",
+      "build_finished_at": "2022-05-23T17:38:35Z"
+    },
+    {
+      "name": "WEB-RADR - WEB-RADR - Android",
+      "public_install_page_url": "https://www.bitrise.io/artifact/129990348/p/ed32ab08eebab9fac08ddbd46a8dea28",
+      "build_number": 4834,
+      "version": "24.0.4",
+      "build_finished_at": "2022-06-06T01:52:31Z"
+    },
+    {
+      "name": "WEB-RADR - WEB-RADR - iOS",
+      "public_install_page_url": "https://www.bitrise.io/artifact/129989323/p/dda75ccfb27afe33ab32618db884135d",
+      "build_number": 5032,
+      "version": "24.0.4",
+      "build_finished_at": "2022-06-06T01:38:09Z"
+    }
+  ]
+}

@@ -35,9 +35,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["axios", "npm:0.27.2"],\
             ["dotenv", "npm:16.0.1"],\
+            ["json2md", "npm:1.12.0"],\
+            ["log-beautify", "npm:1.2.0"],\
             ["moment", "npm:2.29.3"]\
           ],\
           "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["ansi-styles", [\
+        ["npm:4.3.0", {\
+          "packageLocation": "./.yarn/cache/ansi-styles-npm-4.3.0-245c7d42c7-513b44c3b2.zip/node_modules/ansi-styles/",\
+          "packageDependencies": [\
+            ["ansi-styles", "npm:4.3.0"],\
+            ["color-convert", "npm:2.0.1"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["asynckit", [\
@@ -67,9 +79,50 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["bitrise-public-installs-getter", "workspace:."],\
             ["axios", "npm:0.27.2"],\
             ["dotenv", "npm:16.0.1"],\
+            ["json2md", "npm:1.12.0"],\
+            ["log-beautify", "npm:1.2.0"],\
             ["moment", "npm:2.29.3"]\
           ],\
           "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["chalk", [\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/chalk-npm-3.0.0-e813208025-8e3ddf3981.zip/node_modules/chalk/",\
+          "packageDependencies": [\
+            ["chalk", "npm:3.0.0"],\
+            ["ansi-styles", "npm:4.3.0"],\
+            ["supports-color", "npm:7.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["color-convert", [\
+        ["npm:2.0.1", {\
+          "packageLocation": "./.yarn/cache/color-convert-npm-2.0.1-79730e935b-79e6bdb9fd.zip/node_modules/color-convert/",\
+          "packageDependencies": [\
+            ["color-convert", "npm:2.0.1"],\
+            ["color-name", "npm:1.1.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["color-name", [\
+        ["npm:1.1.4", {\
+          "packageLocation": "./.yarn/cache/color-name-npm-1.1.4-025792b0ea-b044585952.zip/node_modules/color-name/",\
+          "packageDependencies": [\
+            ["color-name", "npm:1.1.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["color-regex", [\
+        ["npm:1.0.2", {\
+          "packageLocation": "./.yarn/cache/color-regex-npm-1.0.2-78fcfb229a-e771e55c45.zip/node_modules/color-regex/",\
+          "packageDependencies": [\
+            ["color-regex", "npm:1.0.2"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["combined-stream", [\
@@ -134,6 +187,45 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["has-flag", [\
+        ["npm:4.0.0", {\
+          "packageLocation": "./.yarn/cache/has-flag-npm-4.0.0-32af9f0536-261a135703.zip/node_modules/has-flag/",\
+          "packageDependencies": [\
+            ["has-flag", "npm:4.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["indento", [\
+        ["npm:1.1.13", {\
+          "packageLocation": "./.yarn/cache/indento-npm-1.1.13-e8958b05a1-37523498f5.zip/node_modules/indento/",\
+          "packageDependencies": [\
+            ["indento", "npm:1.1.13"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["json2md", [\
+        ["npm:1.12.0", {\
+          "packageLocation": "./.yarn/cache/json2md-npm-1.12.0-b01ac56c1c-8a3f58ce40.zip/node_modules/json2md/",\
+          "packageDependencies": [\
+            ["json2md", "npm:1.12.0"],\
+            ["indento", "npm:1.1.13"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["log-beautify", [\
+        ["npm:1.2.0", {\
+          "packageLocation": "./.yarn/cache/log-beautify-npm-1.2.0-188802aaf6-fe37c886bb.zip/node_modules/log-beautify/",\
+          "packageDependencies": [\
+            ["log-beautify", "npm:1.2.0"],\
+            ["chalk", "npm:3.0.0"],\
+            ["color-regex", "npm:1.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["mime-db", [\
         ["npm:1.52.0", {\
           "packageLocation": "./.yarn/cache/mime-db-npm-1.52.0-b5371d6fd2-0d99a03585.zip/node_modules/mime-db/",\
@@ -158,6 +250,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/moment-npm-2.29.3-fe4ba99bae-2e780e36d9.zip/node_modules/moment/",\
           "packageDependencies": [\
             ["moment", "npm:2.29.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["supports-color", [\
+        ["npm:7.2.0", {\
+          "packageLocation": "./.yarn/cache/supports-color-npm-7.2.0-606bfcf7da-3dda818de0.zip/node_modules/supports-color/",\
+          "packageDependencies": [\
+            ["supports-color", "npm:7.2.0"],\
+            ["has-flag", "npm:4.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\

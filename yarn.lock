@@ -5,6 +5,15 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"ansi-styles@npm:^4.1.0":
+  version: 4.3.0
+  resolution: "ansi-styles@npm:4.3.0"
+  dependencies:
+    color-convert: ^2.0.1
+  checksum: 513b44c3b2105dd14cc42a19271e80f386466c4be574bccf60b627432f9198571ebf4ab1e4c3ba17347658f4ee1711c163d574248c0c1cdc2d5917a0ad582ec4
+  languageName: node
+  linkType: hard
+
 "asynckit@npm:^0.4.0":
   version: 0.4.0
   resolution: "asynckit@npm:0.4.0"
@@ -28,9 +37,44 @@ __metadata:
   dependencies:
     axios: ^0.27.2
     dotenv: ^16.0.1
+    json2md: ^1.12.0
+    log-beautify: ^1.2.0
     moment: ^2.29.3
   languageName: unknown
   linkType: soft
+
+"chalk@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "chalk@npm:3.0.0"
+  dependencies:
+    ansi-styles: ^4.1.0
+    supports-color: ^7.1.0
+  checksum: 8e3ddf3981c4da405ddbd7d9c8d91944ddf6e33d6837756979f7840a29272a69a5189ecae0ff84006750d6d1e92368d413335eab4db5476db6e6703a1d1e0505
+  languageName: node
+  linkType: hard
+
+"color-convert@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "color-convert@npm:2.0.1"
+  dependencies:
+    color-name: ~1.1.4
+  checksum: 79e6bdb9fd479a205c71d89574fccfb22bd9053bd98c6c4d870d65c132e5e904e6034978e55b43d69fcaa7433af2016ee203ce76eeba9cfa554b373e7f7db336
+  languageName: node
+  linkType: hard
+
+"color-name@npm:~1.1.4":
+  version: 1.1.4
+  resolution: "color-name@npm:1.1.4"
+  checksum: b0445859521eb4021cd0fb0cc1a75cecf67fceecae89b63f62b201cca8d345baf8b952c966862a9d9a2632987d4f6581f0ec8d957dfacece86f0a7919316f610
+  languageName: node
+  linkType: hard
+
+"color-regex@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "color-regex@npm:1.0.2"
+  checksum: e771e55c45af1b9916ed9597d7db0020f6b07e35c982bc6ff67069c82ed8b24b53debb88908a09f0f3045e7196f5f722f5fb7d23f1138b0dda4441375878a534
+  languageName: node
+  linkType: hard
 
 "combined-stream@npm:^1.0.8":
   version: 1.0.8
@@ -76,6 +120,39 @@ __metadata:
   languageName: node
   linkType: hard
 
+"has-flag@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "has-flag@npm:4.0.0"
+  checksum: 261a1357037ead75e338156b1f9452c016a37dcd3283a972a30d9e4a87441ba372c8b81f818cd0fbcd9c0354b4ae7e18b9e1afa1971164aef6d18c2b6095a8ad
+  languageName: node
+  linkType: hard
+
+"indento@npm:^1.1.13":
+  version: 1.1.13
+  resolution: "indento@npm:1.1.13"
+  checksum: 37523498f57b531c81d4f1366defa9559169f1a4c3e1e9901947439df39e2fd65dfbbc52253e61e9288b1cc78bee7194c008c619ccb8fd39f4fb5dc8d0e20ded
+  languageName: node
+  linkType: hard
+
+"json2md@npm:^1.12.0":
+  version: 1.12.0
+  resolution: "json2md@npm:1.12.0"
+  dependencies:
+    indento: ^1.1.13
+  checksum: 8a3f58ce409c6a1ce776f800e7a7688b6d6a1f145e650a79c092355bad731f7540ea59177444e57b6d4c520d96c1179b891c55e157f720314fd3ec19a831aa51
+  languageName: node
+  linkType: hard
+
+"log-beautify@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "log-beautify@npm:1.2.0"
+  dependencies:
+    chalk: ^3.0.0
+    color-regex: ^1.0.2
+  checksum: fe37c886bbc74d7527b3bcd604e25714bd06eb1eafc87e693e5de5521fc53395c3f137f27ae618c3a608f02f70389883aaa0afa6f16ffc0cfa28cf7e3182484d
+  languageName: node
+  linkType: hard
+
 "mime-db@npm:1.52.0":
   version: 1.52.0
   resolution: "mime-db@npm:1.52.0"
@@ -96,5 +173,14 @@ __metadata:
   version: 2.29.3
   resolution: "moment@npm:2.29.3"
   checksum: 2e780e36d9a1823c08a1b6313cbb08bd01ecbb2a9062095820a34f42c878991ccba53abaa6abb103fd5c01e763724f295162a8c50b7e95b4f1c992ef0772d3f0
+  languageName: node
+  linkType: hard
+
+"supports-color@npm:^7.1.0":
+  version: 7.2.0
+  resolution: "supports-color@npm:7.2.0"
+  dependencies:
+    has-flag: ^4.0.0
+  checksum: 3dda818de06ebbe5b9653e07842d9479f3555ebc77e9a0280caf5a14fb877ffee9ed57007c3b78f5a6324b8dbeec648d9e97a24e2ed9fdb81ddc69ea07100f4a
   languageName: node
   linkType: hard
