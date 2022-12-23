@@ -4,12 +4,14 @@ const log = require('log-beautify')
 const apps = require('../apps.json')
 const fs = require('fs')
 const json2md = require('json2md')
+const axios = require('axios')
 
 const {
   statusMapper,
   getBuilds,
   getBuildArtifacts,
-  getBuildArtifactInfo
+  getBuildArtifactInfo,
+
 } = require('./utils')
 
 async function getArtifactsForWorkflow({ workflow }) {
@@ -111,6 +113,17 @@ async function createMd() {
 
   log.ok('Completed building markdown')
   fs.writeFileSync(process.env.MD_PATH || 'markdown.md', md.join('\n'))
+
+  if (process.env.SLACK_WEBHOOK) {
+    try {
+      const slackResponse = await axios.post(process.env.SLACK_WEBHOOK, {
+        'message': md.join('\n')
+      })
+      log.ok('Slack updated with status:', slackResponse.status, slackResponse.statusText)
+    } catch (error) {
+      log.error(error)
+    }
+  }
 }
 
 createMd()
