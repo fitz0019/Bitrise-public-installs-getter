@@ -35,6 +35,7 @@ async function getArtifactsForWorkflow({ workflow }) {
       const { data: artifactInfo, } = await getBuildArtifactInfo({ app_slug, build_slug, artifact_slug })
       const { public_install_page_url, artifact_meta: { app_info: { version, version_name } = {} } = {} } = artifactInfo
       log.info(`Got public artifact data, public install link: ${public_install_page_url}`)
+
       data.push({
         name,
         public_install_page_url,
@@ -74,18 +75,31 @@ const headerMapper = {
 async function createMd() {
   const workFlowData = await getAllArtifactsForWorkflow()
   log.info('Captured Information from all workflows')
-  const md = Object.keys(workFlowData).map((key) => {
+
+  let md = []
+
+  md.push(json2md([
+    {
+      h1: 'WEB-RADR Apps'
+    }
+  ]))
+
+  for (var key in workFlowData) {
     const data = workFlowData[key]
-    return json2md([ 
-      { h1: key.toUpperCase() },
+
+    md.push(json2md([
       {
+        h2: key.toUpperCase(),
+      },
+      {  
         table: {
           headers: Object.keys(data[0]).map(title => headerMapper[title]),
-          rows: data
+          rows: data.map((app) => Object.values(app))
         }
       }
-    ])
-  })
+    ]))
+  }
+
   log.ok('Completed building markdown')
   fs.writeFileSync(process.env.MD_PATH || 'markdown.md', md.join('\n'))
 }
