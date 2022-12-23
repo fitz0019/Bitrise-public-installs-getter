@@ -29,7 +29,16 @@ async function getArtifactsForWorkflow({ workflow }) {
       const { slug: build_slug, finished_at: build_finished_at, build_number, ...buildProps } = latestBuild
       log.info(`Got latest build, slug: ${build_slug}`)
       const { data: artifacts } = await getBuildArtifacts({ app_slug, build_slug })
-      const publicInstallArtifact = artifacts.filter(({ is_public_page_enabled }) => !!is_public_page_enabled)[0]
+
+      const publicInstallArtifact = artifacts
+        .filter(({ is_public_page_enabled }) => !!is_public_page_enabled)
+        .filter((artifact) => {
+          if (artifact.artifact_type === 'android-apk') {
+            return artifact.title.includes('bitrise-signed')
+          } 
+          return artifact
+        })[0]
+
       const { slug: artifact_slug } = publicInstallArtifact
       log.info(`Got public artifact, slug: ${artifact_slug}`)
       const { data: artifactInfo, } = await getBuildArtifactInfo({ app_slug, build_slug, artifact_slug })
